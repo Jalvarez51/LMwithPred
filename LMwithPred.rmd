@@ -87,11 +87,17 @@ In Model.3 above we have an adjusted R-square value of 0.5358 which is bigger th
 ## Compare the two models. Note ADJR r2 larger residual SE is smaller in model.2
 
 
+```{r}
+anova(model.1,model.2,model.3)
+```
+
+
+When we run the analysis of variance, we use model.1 and model.3 to compare strengths and to make our prediction between Arm and Arm plus Grip to determine strength.
+
 
 ## conclusion 
 
-
-
+We can conclude that the variables Arms and Arms plus Grips are the best variables used to give us the best linear models and regressions.
 
 
 
