@@ -88,7 +88,7 @@ In Model.3 above we have an adjusted R-square value of 0.5358 which is bigger th
 
 
 ```{r}
-anova(model.1,model.2,model.3)
+anova(model.1,model.3)
 ```
 
 
