@@ -68,6 +68,22 @@ predict.lm(model.2,New,interval="prediction")
 
 In Model.2 above we have an adjusted R-square score of 0.4053 which is lower than our model.1 R-square of 0.467. Therefore we can not use model.2 strength score using variable Grip for our prediction.
 
+
+```{r}
+plot(SIMS~ARM+GRIP,data=dataF)
+```
+
+
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=dataF)
+summary.lm(model.3)
+New=data.frame(GRIP=94,ARM=88)
+predict.lm(model.3,New,interval="prediction")
+```
+
+In Model.3 above we have an adjusted R-square value of 0.5358 which is bigger than Model.1 which has a value of 0.467.  Therefore we suggest Model.3 to determine the best linear model using both the variables Grip and arm strength.
+
+
 ## Compare the two models. Note ADJR r2 larger residual SE is smaller in model.2
 
 
